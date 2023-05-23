@@ -1,0 +1,77 @@
+Select firstName,
+     lastName
+     from
+     employees
+     WHERE EXISTS
+     ( SELECT 1
+     from
+     customers
+     WHERE
+    customers.contactFirstName = employees.firstName);
+
+
+Select CONCAT(firstName," ",
+     lastName) AS fullName
+     from
+     employees
+     WHERE EXISTS
+     ( SELECT 1
+     from
+     customers
+     WHERE
+    customers.contactFirstName = employees.firstName);
+
+
+Select distinct firstName,
+     lastName
+     from
+     employees
+UNION
+SELECT
+contactFirstName,
+contactLastName
+from 
+customers;
+
+----------------
+
+Select CONCAT(firstName," ",
+     lastName) AS fullName
+     from
+     employees
+UNION
+SELECT
+CONCAT(
+contactFirstName," ",
+contactLastName)
+from 
+customers;
+
+--------------------
+Select firstName,
+     lastName
+     from
+     employees
+ 
+SELECT
+contactFirstName,
+contactLastName
+from 
+customers;
+
+
+-----------------
+
+Select CONCAT(firstName," ",
+     lastName) AS fullName
+     from
+     employees
+UNION
+SELECT
+CONCAT(
+contactFirstName," ",
+contactLastName)
+from 
+customers
+ORDER BY 
+fullName;

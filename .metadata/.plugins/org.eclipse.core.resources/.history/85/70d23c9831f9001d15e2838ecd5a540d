@@ -1,0 +1,44 @@
+package com.wiley.jdbcapp.util;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class EmployeeDaoImpl implements EmployeeDao {
+	static Connection con = dBConnection.createConnection();
+	
+	@Override
+	public void createEmployee(Employee emp) {
+		String q = "Insert into Employee values(?,?,?,?)";	
+		
+		try {
+			PreparedStatement ps = con.prepareStatement(q);
+			ps.setInt(1, emp.getId());
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+	@Override
+	public void getAllEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteEmployeeById(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getEmployeeById(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateEmployeeById(int id, String name) {
+		// TODO Auto-generated method stub
+		
+	}
+}

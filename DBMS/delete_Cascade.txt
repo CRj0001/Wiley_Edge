@@ -1,0 +1,3 @@
+--DELETE cascade
+
+delete from buildings where building_no = 2;

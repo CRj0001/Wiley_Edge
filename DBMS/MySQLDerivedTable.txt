@@ -1,0 +1,77 @@
+*create group silver, gold and platinum and group by Count -
+
+query:-
+
+	> SELECT
+    -> customerGroup,
+    -> COUNT(customerGroup) AS groupCount
+    -> FROM (
+    -> SELECT customerNumber,
+    -> ROUND(SUM(quantityOrdered*priceEach)) sales,
+    -> (CASE
+    -> WHEN SUM(quantityOrdered*priceEach)< 10000 THEN 'Silver'
+    -> WHEN SUM(quantityOrdered*priceEach)BETWEEN 10000 AND 100000 THEN 'Gold'
+    -> WHEN SUM(quantityOrdered*priceEach)> 100000 THEN 'Platinum'
+    -> END
+    -> ) customerGroup
+    -> FROM
+    -> orderdetails
+    -> INNER JOIN orders USING (orderNumber)
+    -> WHERE
+    -> YEAR(shippedDate) = 2003
+    -> Group By
+    -> customerNumber)
+    ->  cg
+    -> GROUP BY
+    -> cg.customerGroup;
+
+USING EXISTS - find customers with atleast one order:-
+
+ SELECT
+     customerNumber,
+     customerName
+     FROM
+     customers
+     WHERE EXISTS
+     (
+     SELECT 1
+     FROM
+     orders 
+	WHERE
+	orders.customerNumber = customers.customerNumber
+     );
+
+
+ SELECT
+     employeenumber,
+     firstname,
+     lastname,
+     extension
+     FROM
+     employees
+     WHERE EXISTS (
+     SELECT 0 FROM offices WHERE city = 'san Francisco' AND
+     offices.officeCode = employees.officeCode
+     );
+
+--Create Same table:
+	Create TABLE cust_arch LIKE customers;
+
+--INSERT
+	INSERT INTO cust_arch
+	SELECT * FROM customers
+	WHERE NOT EXISTS (
+	SELECT 1
+	FROM orders
+	WHERE 
+	orders.customerNumber = customers.customerNumber
+	);
+
+--Delete not active customers:
+	
+	DELETE FROM customers
+	WHERE EXISTS (
+	SELECT 1
+	FROM cust_arch a
+	WHERE a.customerNumber = customers.customerNumber
+	);

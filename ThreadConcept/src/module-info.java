@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Aaruuuu
+ *
+ */
+module ThreadConcept {
+}

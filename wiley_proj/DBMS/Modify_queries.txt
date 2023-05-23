@@ -1,0 +1,66 @@
+--insert duplicate
+CREATE TABLE devices(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100)
+);
+
+INSERT INTO devices(name)
+VALUES('Router 1'),('PC 1'),('Phone 1');
+
+
+INSERT INTO devices(name)
+VALUES(4,'Printer')
+
+INSERT INTO devices(id,name)
+VALUES(4,'Printer')
+ON DUPLICATE KEY UPDATE name = 'My Printer';
+
+----------------------------------------------
+
+--Insert IGNORE > warning
+--Insert STRICT is default > ERROR
+
+
+CREATE TABLE subscribers(
+	id int AUTO_INCREMENT PRIMARY KEY,
+	email varchar(100) NOT NULL UNIQUE
+);
+
+INSERT INTO subscribers(email) 
+VALUES('abcd@gmail.com');
+
+INSERT INTO subscribers(email) 
+VALUES('abcd@gmail.com'),('raj@gmail.com');
+
+INSERT IGNORE INTO subscribers(email) 
+VALUES('abcd@gmail.com'),('raj@gmail.com');
+
+
+
+--UPDATE QUERIES
+
+	SELECT firstname, lastname, email from employees where employeeNumber = 1056;
+
+	UPDATE employees
+SET email = "mary@gmail.com"
+WHERE employeeNumber = 1056;
+
+--UPDATE and REPLACE
+
+UPDATE employees
+SET
+	email = REPLACE(email, "@classicmodelcars.com","@wiley.com")
+WHERE
+	jobTitle = 'Sales Rep';
+
+
+SELECT email
+FROM
+employees;
+
+
+UPDATE employees
+INNER JOIN 
+merits ON employees.performance = merits.performance
+SET 
+salary = salary + salary*percentage;

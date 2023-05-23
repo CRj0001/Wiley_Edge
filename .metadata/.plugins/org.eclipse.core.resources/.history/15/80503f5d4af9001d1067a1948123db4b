@@ -1,0 +1,9 @@
+package com.wiley.jdbcapp.util;
+
+import java.sql.Connection;
+
+public class DbQueries {
+	public static void main(String[] args) {
+		
+	}
+}
