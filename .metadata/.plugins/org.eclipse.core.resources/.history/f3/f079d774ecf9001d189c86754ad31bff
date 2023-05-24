@@ -1,0 +1,42 @@
+package com.wiley.jdbcapp.util;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class BatchProcess {
+	
+	public static  void batch(String q1,String q2, String q3) {
+		Connection conn = null;
+		Statement st = null;
+		ResultSet rs = null;
+		
+		try {
+			dBConnection dbc= new dBConnection();
+			conn = dbc.createConnection();
+			
+			conn.setAutoCommit(false);
+			
+			st = conn.createStatement();
+			
+			st.addBatch(q1);
+			st.addBatch(q2);
+			st.addBatch(q3);
+			
+			rs = st.executeBatch();
+			
+			while(rs.next()) {
+				
+			}
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}
