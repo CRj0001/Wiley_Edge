@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
+=======
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="ThreadConcept.SupportClass"/>
+    <fullyQualifiedTypeName name="ThreadConcept.Person1"/>
+    <fullyQualifiedTypeName name="ThreadConcept.Sheet"/>
+    <fullyQualifiedTypeName name="ThreadConcept.BankAc"/>
+    <fullyQualifiedTypeName name="GenericConcept.Printer"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ArrayBlockingQueue"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="AssignmentShoppingApp.Product"/>
+    <fullyQualifiedTypeName name="java.nio.channels.spi.SelectorProvider"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="Collections.CustomArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="Collections.IdComparator"/>
+>>>>>>> c2599336aabd1bcb66b468b19ba45cf2489b2815
     <fullyQualifiedTypeName name="Collections.CustomStudent"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.concurrent.CopyOnWriteArrayList"/>
@@ -38,6 +57,7 @@
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
+<<<<<<< HEAD
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="com.wiley.jdbcapp.util.dBConnection"/>
@@ -60,4 +80,11 @@
     <fullyQualifiedTypeName name="javax.annotation.Resource"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
     <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+=======
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="com.wiley.jdbcapp.util.dBConnection"/>
+    <fullyQualifiedTypeName name="com.wiley.homeloan.LoanDAOImpl"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="com.wiley.homeloan.LoanProcessDAOImpl"/>
+>>>>>>> c2599336aabd1bcb66b468b19ba45cf2489b2815
 </qualifiedTypeNameHistroy>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.132+C:\Users\raj\Internship\wiley_edge_training\training\JAVA concepts\.metadata\.plugins\org.eclipse.jdt.core
 658944538.index
 4074862261.index
@@ -13,3 +14,10 @@ INDEX VERSION 1.132+C:\Users\raj\Internship\wiley_edge_training\training\JAVA co
 314942107.index
 1468007358.index
 397070669.index
+=======
+INDEX VERSION 1.132+D:\Wiley_Training\JAVA concepts\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1184523832.index
+229644136.index
+658944538.index
+>>>>>>> c2599336aabd1bcb66b468b19ba45cf2489b2815

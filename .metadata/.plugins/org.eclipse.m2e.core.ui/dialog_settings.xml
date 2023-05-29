@@ -25,7 +25,11 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+<<<<<<< HEAD
 			<item value="com.wiley.springcore"/>
+=======
+			<item value="com.wiley.homeloan"/>
+>>>>>>> c2599336aabd1bcb66b468b19ba45cf2489b2815
 			<item value="com.wiley.bookpub"/>
 			<item value="com.wiley.jdbcapp.util"/>
 		</list>
@@ -33,7 +37,11 @@
 			<item value="com.wiley"/>
 		</list>
 		<list key="artifactId">
+<<<<<<< HEAD
 			<item value="springcore"/>
+=======
+			<item value="homeloan"/>
+>>>>>>> c2599336aabd1bcb66b468b19ba45cf2489b2815
 			<item value="bookpub"/>
 			<item value="jdbcapp"/>
 		</list>
