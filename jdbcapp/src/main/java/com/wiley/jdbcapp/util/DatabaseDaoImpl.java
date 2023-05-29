@@ -6,7 +6,6 @@ import java.sql.PreparedStatement;
 public class DatabaseDaoImpl implements DatabaseDao{
 	static Connection conn = MysqlConnection.createConnection();
 	
-	@Override
 	public void createDb(String name) {
 		String q = "create DATABASE "+name;
 		
@@ -25,7 +24,6 @@ public class DatabaseDaoImpl implements DatabaseDao{
 		
 	}
 
-	@Override
 	public void useDb(String name) {
 		String q = "use "+name;
 		
@@ -44,7 +42,6 @@ public class DatabaseDaoImpl implements DatabaseDao{
 		
 	}
 
-	@Override
 	public void dropDb(String name) {
 		String q = "DROP DATABASE "+name;
 		
@@ -63,7 +60,6 @@ public class DatabaseDaoImpl implements DatabaseDao{
 		
 	}
 
-	@Override
 	public void createTable(String name) {
 		String q = "CREATE TABLE "+name;
 		
@@ -81,7 +77,6 @@ public class DatabaseDaoImpl implements DatabaseDao{
 		
 	}
 
-	@Override
 	public void dropTable(String name) {
 		String q = "DROP TABLE "+name;
 		

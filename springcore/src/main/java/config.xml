@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/spring-context.xsd">
+
+	<bean class="com.wiley.springcore.Student" name="WileyStudent1">
+		<property name="studentId">
+			<value>101</value>
+		</property>
+
+		<property name="name">
+			<value>Raj</value>
+		</property>
+
+		<property name="address">
+			<value>Jabalpur</value>
+		</property>
+	</bean>
+
+	<bean class="com.wiley.springcore.Student" name = "WileyStudent2">
+		<property name="studentId" value ="102">
+					</property>
+
+		<property name="name" value ="Sahil">
+			
+		</property>
+
+		<property name="address" value = "Jabalpur">
+			
+		</property>
+	</bean>
+	
+	<!--  
+	<bean class = "com.wiley.springcore.Student1" name = "stdMS1">
+		<property name="rollno">
+			<set>
+				<value>12</value>
+				<value>13</value>
+				<value>123</value>
+				<value>13</value>
+				<value>12</value>
+			</set>
+		</property>
+	</bean>
+	
+		<bean class = "com.wiley.springcore.Student1" name = "stdMS2">
+		<property name="fullname">
+			<map>
+				<entry key = "Raj" value="Chourasia"></entry>
+				<entry key = "Rahul" value="Kumar"></entry>
+			</map>
+		</property>
+	</bean>
+	-->
+	
+
+<bean class = "com.wiley.springcore.Student1" name = "stdMS1">
+		<property name="rollno">
+			<set>
+				<value>12</value>
+				<value>13</value>
+				<value>123</value>
+				<value>13</value>
+				<value>12</value>
+			</set>
+		</property>
+	
+	
+		
+		<property name="fullname">
+			<map>
+				<entry key = "Raj" value="Chourasia"></entry>
+				<entry key = "Rahul" value="Kumar"></entry>
+			</map>
+		</property>
+	</bean>
+
+</beans>

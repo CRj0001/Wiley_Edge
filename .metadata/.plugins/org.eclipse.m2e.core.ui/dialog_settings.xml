@@ -25,12 +25,16 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.wiley.springcore"/>
+			<item value="com.wiley.bookpub"/>
 			<item value="com.wiley.jdbcapp.util"/>
 		</list>
 		<list key="groupId">
 			<item value="com.wiley"/>
 		</list>
 		<list key="artifactId">
+			<item value="springcore"/>
+			<item value="bookpub"/>
 			<item value="jdbcapp"/>
 		</list>
 		<list key="projectNameTemplate">

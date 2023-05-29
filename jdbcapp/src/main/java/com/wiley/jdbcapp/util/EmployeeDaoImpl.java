@@ -8,7 +8,6 @@ import java.sql.Statement;
 public class EmployeeDaoImpl implements EmployeeDao {
 	Connection con; 
 	
-	@Override
 	public void createEmployee(Employee emp) {
 		con =  dBConnection.createConnection();
 		String q = "Insert into Employee values(?,?,?,?)";	
@@ -30,7 +29,6 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		}
 	}
 
-	@Override
 	public void getAllEmployee() {
 		con =  dBConnection.createConnection();
 		String q = "SELECT * FROM employee";
@@ -55,7 +53,6 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		}
 	}	
 
-	@Override
 	public void deleteEmployeeById(int id) {
 		con =  dBConnection.createConnection();
 		String q = "delete FROM	Employee where id="+id;	
@@ -74,7 +71,6 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		
 	}
 
-	@Override
 	public void getEmployeeById(int id) {
 		con =  dBConnection.createConnection();
 		String q = "SELECT * FROM employee where id="+id;
@@ -99,7 +95,6 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		}		
 	}
 
-	@Override
 	public void updateEmployeeById(int id, String name) {
 		con =  dBConnection.createConnection();
 		String q = "UPDATE Employee set name = ? where id = ?";
@@ -119,7 +114,6 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		}
 	}
 
-	@Override
 	public void sortSalary(int i) {
 		con =  dBConnection.createConnection();
 		String q;
@@ -145,7 +139,6 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		}
 	}
 
-	@Override
 	public void searchEmployeeByName(String name) {
 		con = dBConnection.createConnection();
 		String q = "SELECT * FROM Employee WHERE name like'"+name+"'";
