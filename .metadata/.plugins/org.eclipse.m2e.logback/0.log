@@ -3411,3 +3411,6 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognise
 2023-05-25 17:05:39,871 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-05-25 17:05:39,871 [Worker-92: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Wiley_Training\JAVA concepts\homeloan\src\test\resources
 >>>>>>> c2599336aabd1bcb66b468b19ba45cf2489b2815
+2023-06-01 10:29:58,546 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-06-01 10:33:22,900 [Worker-21: https://download.eclipse.org/technology/epp/packages/2023-03/artifacts.xml.xz] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (java.net.SocketException) caught when processing request to {s}->https://download.eclipse.org:443
+2023-06-01 10:34:04,597 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

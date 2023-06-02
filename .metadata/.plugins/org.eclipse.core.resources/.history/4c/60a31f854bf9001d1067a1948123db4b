@@ -1,9 +1,0 @@
-package com.wiley.jdbcapp.util;
-
-public interface DatabaseDao {
-	
-	public void createDb(String name);
-	public void useDb(String name);
-	
-
-}
